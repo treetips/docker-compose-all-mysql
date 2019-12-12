@@ -1,2 +1,3 @@
 #!/bin/sh
-mysql --defaults-extra-file=./my.cnf -P3312
+. .env
+docker exec -it ${MARIADB_CONTAINER_NAME_PREFIX}10.2 sh -c "mysql --defaults-group-suffix=${DEFAULTS_GROUP_SUFFIX}"
