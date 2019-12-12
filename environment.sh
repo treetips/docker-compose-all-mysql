@@ -1,0 +1,5 @@
+#!/bin/sh
+. .env
+
+DEFAULTS_GROUP_SUFFIX=WORK
+MYSQL_CONNECT_CMD="cd ${MOUNTED_SHARED_DIRECTORY} && mysql --defaults-group-suffix=${DEFAULTS_GROUP_SUFFIX}"
