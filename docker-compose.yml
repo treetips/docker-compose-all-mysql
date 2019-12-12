@@ -6,10 +6,10 @@ services:
     ports:
       - 3355:3306
     environment:
-      - MYSQL_DATABASE=work
-      - MYSQL_USER=worker
-      - MYSQL_PASSWORD=worker
-      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=${DB_DATABASE}
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
       - TZ=UTC
     volumes:
       - ./my.cnf:/root/.my.cnf:ro
@@ -23,10 +23,10 @@ services:
     ports:
       - 3356:3306
     environment:
-      - MYSQL_DATABASE=work
-      - MYSQL_USER=worker
-      - MYSQL_PASSWORD=worker
-      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=${DB_DATABASE}
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
       - TZ=UTC
     volumes:
       - ./my.cnf:/root/.my.cnf:ro
@@ -40,10 +40,10 @@ services:
     ports:
       - 3357:3306
     environment:
-      - MYSQL_DATABASE=work
-      - MYSQL_USER=worker
-      - MYSQL_PASSWORD=worker
-      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=${DB_DATABASE}
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
       - TZ=UTC
     volumes:
       - ./my.cnf:/root/.my.cnf:ro
@@ -57,10 +57,10 @@ services:
     ports:
       - 3380:3306
     environment:
-      - MYSQL_DATABASE=work
-      - MYSQL_USER=worker
-      - MYSQL_PASSWORD=worker
-      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=${DB_DATABASE}
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
       - TZ=UTC
     volumes:
       - ./my.cnf:/root/.my.cnf:ro
@@ -75,10 +75,10 @@ services:
     ports:
       - 3310:3306
     environment:
-      - MYSQL_DATABASE=work
-      - MYSQL_USER=worker
-      - MYSQL_PASSWORD=worker
-      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=${DB_DATABASE}
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
       - TZ=UTC
     volumes:
       - ./my.cnf:/root/.my.cnf:ro
@@ -92,10 +92,10 @@ services:
     ports:
       - 3311:3306
     environment:
-      - MYSQL_DATABASE=work
-      - MYSQL_USER=worker
-      - MYSQL_PASSWORD=worker
-      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=${DB_DATABASE}
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
       - TZ=UTC
     volumes:
       - ./my.cnf:/root/.my.cnf:ro
@@ -109,10 +109,10 @@ services:
     ports:
       - 3312:3306
     environment:
-      - MYSQL_DATABASE=work
-      - MYSQL_USER=worker
-      - MYSQL_PASSWORD=worker
-      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=${DB_DATABASE}
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
       - TZ=UTC
     volumes:
       - ./my.cnf:/root/.my.cnf:ro
@@ -126,10 +126,10 @@ services:
     ports:
       - 3313:3306
     environment:
-      - MYSQL_DATABASE=work
-      - MYSQL_USER=worker
-      - MYSQL_PASSWORD=worker
-      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=${DB_DATABASE}
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
       - TZ=UTC
     volumes:
       - ./my.cnf:/root/.my.cnf:ro
