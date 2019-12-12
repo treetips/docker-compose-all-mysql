@@ -10,7 +10,7 @@ services:
       - MYSQL_USER=${DB_USER}
       - MYSQL_PASSWORD=${DB_PASSWORD}
       - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
-      - TZ=UTC
+      - TZ=${TIMEZONE}
     volumes:
       - ./my.cnf:/root/.my.cnf:ro
       - ./mysql5.5/conf.d:/etc/mysql/conf.d:ro
@@ -27,7 +27,7 @@ services:
       - MYSQL_USER=${DB_USER}
       - MYSQL_PASSWORD=${DB_PASSWORD}
       - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
-      - TZ=UTC
+      - TZ=${TIMEZONE}
     volumes:
       - ./my.cnf:/root/.my.cnf:ro
       - ./mysql5.6/conf.d:/etc/mysql/conf.d:ro
@@ -44,7 +44,7 @@ services:
       - MYSQL_USER=${DB_USER}
       - MYSQL_PASSWORD=${DB_PASSWORD}
       - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
-      - TZ=UTC
+      - TZ=${TIMEZONE}
     volumes:
       - ./my.cnf:/root/.my.cnf:ro
       - ./mysql5.7/conf.d:/etc/mysql/conf.d:ro
@@ -61,7 +61,7 @@ services:
       - MYSQL_USER=${DB_USER}
       - MYSQL_PASSWORD=${DB_PASSWORD}
       - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
-      - TZ=UTC
+      - TZ=${TIMEZONE}
     volumes:
       - ./my.cnf:/root/.my.cnf:ro
       - ./mysql8.0/conf.d:/etc/mysql/conf.d:ro
@@ -79,7 +79,7 @@ services:
       - MYSQL_USER=${DB_USER}
       - MYSQL_PASSWORD=${DB_PASSWORD}
       - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
-      - TZ=UTC
+      - TZ=${TIMEZONE}
     volumes:
       - ./my.cnf:/root/.my.cnf:ro
       - ./mariadb10.0/conf.d:/etc/mysql/conf.d:ro
@@ -96,7 +96,7 @@ services:
       - MYSQL_USER=${DB_USER}
       - MYSQL_PASSWORD=${DB_PASSWORD}
       - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
-      - TZ=UTC
+      - TZ=${TIMEZONE}
     volumes:
       - ./my.cnf:/root/.my.cnf:ro
       - ./mariadb10.1/conf.d:/etc/mysql/conf.d:ro
@@ -113,7 +113,7 @@ services:
       - MYSQL_USER=${DB_USER}
       - MYSQL_PASSWORD=${DB_PASSWORD}
       - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
-      - TZ=UTC
+      - TZ=${TIMEZONE}
     volumes:
       - ./my.cnf:/root/.my.cnf:ro
       - ./mariadb10.2/conf.d:/etc/mysql/conf.d:ro
@@ -130,7 +130,7 @@ services:
       - MYSQL_USER=${DB_USER}
       - MYSQL_PASSWORD=${DB_PASSWORD}
       - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
-      - TZ=UTC
+      - TZ=${TIMEZONE}
     volumes:
       - ./my.cnf:/root/.my.cnf:ro
       - ./mariadb10.3/conf.d:/etc/mysql/conf.d:ro
