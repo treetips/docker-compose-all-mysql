@@ -17,6 +17,7 @@ services:
       - ./mysql5.5/logs:/var/log/mysql:rw
       - ./mysql5.5/initdb.d:/docker-entrypoint-initdb.d:ro
       - ./common:${MOUNTED_SHARED_DIRECTORY}:ro
+      - ./auto-generate:/auto-generate:rw
   mysql5.6:
     image: mysql:5.6
     container_name: ${MYSQL_CONTAINER_NAME_PREFIX}5.6
@@ -34,6 +35,7 @@ services:
       - ./mysql5.6/logs:/var/log/mysql:rw
       - ./mysql5.6/initdb.d:/docker-entrypoint-initdb.d:ro
       - ./common:${MOUNTED_SHARED_DIRECTORY}:ro
+      - ./auto-generate:/auto-generate:rw
   mysql5.7:
     image: mysql:5.7
     container_name: ${MYSQL_CONTAINER_NAME_PREFIX}5.7
@@ -51,6 +53,7 @@ services:
       - ./mysql5.7/logs:/var/log/mysql:rw
       - ./mysql5.7/initdb.d:/docker-entrypoint-initdb.d:ro
       - ./common:${MOUNTED_SHARED_DIRECTORY}:ro
+      - ./auto-generate:/auto-generate:rw
   mysql8.0:
     image: mysql:8.0
     container_name: ${MYSQL_CONTAINER_NAME_PREFIX}8.0
@@ -68,6 +71,7 @@ services:
       - ./mysql8.0/logs:/var/log/mysql:rw
       - ./mysql8.0/initdb.d:/docker-entrypoint-initdb.d:ro
       - ./common:${MOUNTED_SHARED_DIRECTORY}:ro
+      - ./auto-generate:/auto-generate:rw
 
   mariadb10.0:
     image: mariadb:10.0
@@ -86,6 +90,7 @@ services:
       - ./mariadb10.0/logs:/var/log/mysql:rw
       - ./mariadb10.0/initdb.d:/docker-entrypoint-initdb.d:ro
       - ./common:${MOUNTED_SHARED_DIRECTORY}:ro
+      - ./auto-generate:/auto-generate:rw
   mariadb10.1:
     image: mariadb:10.1
     container_name: ${MARIADB_CONTAINER_NAME_PREFIX}10.1
@@ -103,6 +108,7 @@ services:
       - ./mariadb10.1/logs:/var/log/mysql:rw
       - ./mariadb10.1/initdb.d:/docker-entrypoint-initdb.d:ro
       - ./common:${MOUNTED_SHARED_DIRECTORY}:ro
+      - ./auto-generate:/auto-generate:rw
   mariadb10.2:
     image: mariadb:10.2
     container_name: ${MARIADB_CONTAINER_NAME_PREFIX}10.2
@@ -120,6 +126,7 @@ services:
       - ./mariadb10.2/logs:/var/log/mysql:rw
       - ./mariadb10.2/initdb.d:/docker-entrypoint-initdb.d:ro
       - ./common:${MOUNTED_SHARED_DIRECTORY}:ro
+      - ./auto-generate:/auto-generate:rw
   mariadb10.3:
     image: mariadb:10.3
     container_name: ${MARIADB_CONTAINER_NAME_PREFIX}10.3
@@ -137,3 +144,4 @@ services:
       - ./mariadb10.3/logs:/var/log/mysql:rw
       - ./mariadb10.3/initdb.d:/docker-entrypoint-initdb.d:ro
       - ./common:${MOUNTED_SHARED_DIRECTORY}:ro
+      - ./auto-generate:/auto-generate:rw
