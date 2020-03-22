@@ -61,6 +61,12 @@ $ ./connect-mariadb-10-2.sh
 $ ./connect-mariadb-10-3.sh
 ```
 
+Wait for MySQL started before connecting.
+
+MySQLの起動完了を待ってから接続します。。
+
+![waiting for running](https://user-images.githubusercontent.com/12574048/77249107-3a6d2080-6c82-11ea-8e8f-666cc3b2732d.gif)
+
 ## Optional
 
 ### Customize mysql client settings
