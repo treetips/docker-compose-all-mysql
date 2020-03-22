@@ -8,4 +8,4 @@ echo "# Execute init scripts"
 echo "#######################################################"
 ls -lR /app
 
-mysql $(getMysqlInitdbdCommand) < /app/share/test_country.sql
+mysql $(getMysqlInitdbdOption) < /app/share/test_country.sql

@@ -12,6 +12,6 @@ local-infile=1
 EOF
 }
 
-getMysqlInitdbdCommand() {
+getMysqlInitdbdOption() {
   echo "--defaults-extra-file=${MYSQL_INITDBD_MY_CNF_PATH}"
 }
