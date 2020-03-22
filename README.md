@@ -5,6 +5,8 @@ Create all mysql-server docker container.
 
 In order to make it easy to test whether applications can be started with different versions, such as upgrading mysql, we made it possible to start multiple mysql servers easily.
 
+mysqlのアップグレードなど、異なるバージョンでアプリケーションを起動できるかどうかをテストしやすくするために、複数のmysqlサーバーを `docker-compose` で簡単に起動できるようにしました。
+
 ## Support MySQL version.
 
 - MySQL v5.5
@@ -27,6 +29,10 @@ https://www.docker.com/products/docker-desktop
 `No need to install mysql client` .
 
 When connect-xxx.sh execute, `the mysql client installed in the docker container is executed locally` .
+
+MySQLクライアントのインストールは不要です。
+
+connect-xxx.shを実行すると、ローカルからMySQLコンテナ内のmysqlクライアントをリモート実行します。
 
 ### Clone this repository
 
@@ -65,6 +71,8 @@ vi ./my.cnf
 
 All the same connection setting except port.
 
+ポート以外の設定を共通で設定します。
+
 ### Customize mysql server settings
 
 ```bash
@@ -82,6 +90,8 @@ $ vi ./mariadb10.3/conf.d/my.cnf
 
 If you change database-schema or user or password or root-password, Edit `.env` .
 
+DBスキーマ・ユーザ名・パスワード・rootパスワードを変更したい場合は、 `.env` を編集して下さい。
+
 ```yaml
 DB_DATABASE=work
 DB_USER=worker
@@ -93,6 +103,8 @@ DB_ROOT_PASSWORD=root
 
 If you want to delete `general.log` and `error.log` and `slow-query.log`, execute `clear_logs.sh` .
 
+`general.log` ・ `error.log` を削除したい場合は `clear_logs.sh` を実行して下さい。
+
 ### Customize init scripts
 
 https://hub.docker.com/_/mysql/#initializing-a-fresh-instance
@@ -103,3 +115,5 @@ https://hub.docker.com/_/mysql/#initializing-a-fresh-instance
 1. `./(mysql|mariadb)X.X/initdb.d/xxx.(sh|sql)` (executed for each container)
 
 Initial data can be input at startup by customizing these.
+
+これらをカスタマイズすることにより、起動時に初期データを投入できます。
