@@ -1,5 +1,5 @@
 #!/bin/sh
-. ./env
+. ./.env
 
 MYSQL_DEFAULTS_GROUP_SUFFIX="WORK"
 MYSQL_CONNECT_CMD="mysql --defaults-group-suffix=${MYSQL_DEFAULTS_GROUP_SUFFIX}"
