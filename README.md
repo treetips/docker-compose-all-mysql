@@ -1,6 +1,10 @@
 Create all mysql-server docker container.
 ====
 
+## Based on
+
+It's a [fork](https://github.com/treetips/docker-compose-all-mysql)
+
 ## Motivation
 
 In order to make it easy to test whether applications can be started with different versions, such as upgrading mysql, we made it possible to start multiple mysql servers easily.
